@@ -49,7 +49,6 @@ struct staff_entry
     {
         char name[10];
         char dob[10];
-        char blood_group[5];
         char phone_num[11];
         char section[20];
         char address[50];
@@ -237,9 +236,7 @@ void staff_entry()
     printf("\n Date of Birth :");
     scanf("%s",new1.dob);
     printf("\n Phone number : ");
-    scanf("%S",new1.phone_num);
-    printf("\n Blood group :");
-    scanf("%s",new1.blood_group);
+    scanf("%s",new1.phone_num);
     printf("\n Father's name :");
     scanf("%s",new1.father_name);
     printf("\n City :");
@@ -248,7 +245,7 @@ void staff_entry()
     scanf("%s",new1.section);
     printf("\n Enter Date of Employment:");
     scanf("%s",new1.empdate);
-    fprintf(ptr,"NAME: %s\nDOB: %s\nPHONE NO:%s\nBLOOD GROUP: %s\nFATHER'S NAME: %s\nEMPLOYED: %s\nSECTION:%s\nCITY: %s\n\n",new1.name, new1.dob, new1.phone_num, new1.blood_group, new1.father_name, new1.empdate, new1.section, new1.address);
+    fprintf(ptr,"NAME: %s\nDOB: %s\nPHONE NO:%s\nFATHER'S NAME: %s\nEMPLOYED: %s\nSECTION:%s\nCITY: %s\n\n",new1.name, new1.dob, new1.phone_num, new1.father_name, new1.empdate, new1.section, new1.address);
     if(strcmp(new1.section,"Hostel Cleaning")==0)
         {
                 sec=fopen("hostel_cleaning.dat","a+");
